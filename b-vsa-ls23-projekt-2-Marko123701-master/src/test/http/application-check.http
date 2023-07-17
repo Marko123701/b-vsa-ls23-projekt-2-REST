@@ -1,0 +1,163 @@
+GET http://localhost:8080/api/application.wadl
+Accept: application/xml
+
+###
+POST http://localhost:8080/api/students/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "aisId": "111391",
+  "name": "Marko",
+  "email": "xmatuskam3@stuba.sk",
+  "password": "YmFzaWM",
+  "year": 0,
+  "term": 0,
+  "programme": "API"
+}
+
+###
+POST http://localhost:8080/api/students/
+Content-Type: application/json
+Accept: application/json
+
+{
+  "aisId": "111393",
+  "name": "Marko",
+  "email": "parapapapa@stuba.sk",
+  "password": "YmFzaWM",
+  "year": 0,
+  "term": 0,
+  "programme": "API"
+}
+
+
+###student xmatusma3ATstuba.sk:basic
+GET http://localhost:8080/api/students
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtM0BzdHViYS5zazpiYXNpYw==
+
+###teacher xmatusma158ATstuba.sk:basic
+GET http://localhost:8080/api/students
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtMTU4QHN0dWJhLnNrOmJhc2lj
+
+###wrong xmatusma158ATstuba.sk:baa
+GET http://localhost:8080/api/students
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtMTU4QHN0dWJhLnNrOmJhYQ==
+
+###
+GET http://localhost:8080/api/students/1
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtM0BzdHViYS5zazpiYXNpYw==
+
+###student xmatusma3ATstuba.sk:basic
+DELETE http://localhost:8080/api/students/1
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtM0BzdHViYS5zazpiYXNpYw==
+
+###teacher xmatuska158ATstuba.sk:basic
+DELETE http://localhost:8080/api/students/2
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtMTU4QHN0dWJhLnNrOmJhc2lj
+
+###student parapapapa158ATstuba.sk:basic
+DELETE http://localhost:8080/api/students/1
+Accept: application/json
+Authorization: Authorization: Basic cGFyYXBhcGFwYUBzdHViYS5zazpiYXNpYw==
+
+###
+POST http://localhost:8080/api/teachers
+Content-Type: application/json
+Accept: application/json
+
+{
+  "aisId": "111392",
+  "name": "Marko",
+  "email": "xmatuskam158@stuba.sk",
+  "password": "YmFzaWM",
+  "institute": "string",
+  "department": "API"
+}
+
+###
+POST http://localhost:8080/api/teachers
+Content-Type: application/json
+Accept: application/json
+
+{
+  "aisId": "111394",
+  "name": "Marko",
+  "email": "marko@stuba.sk",
+  "password": "YmFzaWM",
+  "institute": "string",
+  "department": "API"
+}
+
+###teacher xmatuska158ATstuba.sk:basic
+GET http://localhost:8080/api/teachers
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtMTU4QHN0dWJhLnNrOmJhc2lj
+
+###
+GET http://localhost:8080/api/teachers/1
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtMTU4QHN0dWJhLnNrOmJhc2lj
+
+###teacher xmatuska158ATstuba.sk:basic
+DELETE http://localhost:8080/api/teachers/1
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtMTU4QHN0dWJhLnNrOmJhc2lj
+
+###teacher markoATstuba.sk:basic
+DELETE http://localhost:8080/api/teachers/1
+Accept: application/json
+Authorization: Authorization: Basic bWFya29Ac3R1YmEuc2s6YmFzaWM=
+
+###teacher xmatuskam158
+POST http://localhost:8080/api/theses
+Content-Type: application/json
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtMTU4QHN0dWJhLnNrOmJhc2lj
+
+{
+  "id": 1,
+  "registrationNumber": "FEI-pTX8z76nbnd6eAODTOfuxiCuB_AYC",
+  "title": "string",
+  "description": "string",
+  "type": "BACHELOR"
+}
+
+###teacher xmatuskam158
+DELETE http://localhost:8080/api/theses/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtMTU4QHN0dWJhLnNrOmJhc2lj
+
+###teacher xmatuskam158
+GET http://localhost:8080/api/theses/
+Content-Type: application/json
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtMTU4QHN0dWJhLnNrOmJhc2lj
+
+###teacher marko
+DELETE http://localhost:8080/api/theses/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Authorization: Basic bWFya29Ac3R1YmEuc2s6YmFzaWM=
+
+###student xmatusma3ATstuba.sk:basic
+POST http://localhost:8080/api/theses/1/assign
+Content-Type: application/json
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtM0BzdHViYS5zazpiYXNpYw==
+
+{
+  "studentId": "1"
+}
+
+###student xmatusma3ATstuba.sk:basic
+GET http://localhost:8080/api/students
+Accept: application/json
+Authorization: Authorization: Basic eG1hdHVza2FtM0BzdHViYS5zazpiYXNpYw==

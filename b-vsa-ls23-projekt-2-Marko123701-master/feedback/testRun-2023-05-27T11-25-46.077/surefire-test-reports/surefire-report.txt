@@ -1,0 +1,192 @@
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.StudentResourceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 11.392 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.StudentResourceTest
+shouldGetNotFoundForNonExistingStudent  Time elapsed: 1.365 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldGetNotFoundForNonExistingStudent(StudentResourceTest.java:168)
+
+shouldReturnUnauthorized  Time elapsed: 0.066 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldReturnUnauthorized(StudentResourceTest.java:114)
+
+shouldReturnForbiddenToDeleteWithWrongStudent  Time elapsed: 2.034 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldReturnForbiddenToDeleteWithWrongStudent(StudentResourceTest.java:215)
+
+shouldGetAllStudents  Time elapsed: 1.998 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldGetAllStudents(StudentResourceTest.java:95)
+
+shouldCreateStudentWithOnlyRequiredProperties  Time elapsed: 0.556 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <500>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldCreateStudentWithOnlyRequiredProperties(StudentResourceTest.java:63)
+
+shouldGetEmptyList  Time elapsed: 1.093 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldGetEmptyList(StudentResourceTest.java:127)
+
+shouldDeleteStudent  Time elapsed: 1.075 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldDeleteStudent(StudentResourceTest.java:183)
+
+shouldGetStudent  Time elapsed: 1.053 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.StudentResourceTest.shouldGetStudent(StudentResourceTest.java:146)
+
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 21, Errors: 0, Skipped: 0, Time elapsed: 21.387 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest
+shouldCallCreateThesisWithLoggedStudent  Time elapsed: 1.156 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallCreateThesisWithLoggedStudent(ThesisResourceTest.java:130)
+
+shouldGetNotFoundForNonExistingThesis  Time elapsed: 1.053 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetNotFoundForNonExistingThesis(ThesisResourceTest.java:226)
+
+shouldFindThesisByStudent  Time elapsed: 1.113 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldFindThesisByStudent(ThesisResourceTest.java:525)
+
+shouldCreateThesis  Time elapsed: 1.076 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCreateThesis(ThesisResourceTest.java:35)
+
+shouldReturnUnauthorized  Time elapsed: 0.067 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldReturnUnauthorized(ThesisResourceTest.java:166)
+
+shouldFindThesisByTeacher  Time elapsed: 1.046 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldFindThesisByTeacher(ThesisResourceTest.java:483)
+
+shouldAssignThesisWithStudent  Time elapsed: 1.039 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldAssignThesisWithStudent(ThesisResourceTest.java:323)
+
+shouldGetThesis  Time elapsed: 1.047 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetThesis(ThesisResourceTest.java:194)
+
+shouldAssignThesisWithTeacher  Time elapsed: 1.053 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldAssignThesisWithTeacher(ThesisResourceTest.java:285)
+
+shouldCallDeleteThesisWithAnotherTeacher  Time elapsed: 1.053 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallDeleteThesisWithAnotherTeacher(ThesisResourceTest.java:259)
+
+shouldGetEmptyList  Time elapsed: 1.035 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetEmptyList(ThesisResourceTest.java:179)
+
+shouldCallFindThesesWithEmptyCriteria  Time elapsed: 1.054 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallFindThesesWithEmptyCriteria(ThesisResourceTest.java:575)
+
+shouldCreateThesisWithOnlyRequiredProperties  Time elapsed: 1.053 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCreateThesisWithOnlyRequiredProperties(ThesisResourceTest.java:68)
+
+shouldCallWithoutBodyAndReturnError  Time elapsed: 1.105 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallWithoutBodyAndReturnError(ThesisResourceTest.java:112)
+
+shouldSubmitThesisWithStudent  Time elapsed: 1.038 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithStudent(ThesisResourceTest.java:408)
+
+shouldCallDeleteThesisWithStudent  Time elapsed: 1.048 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallDeleteThesisWithStudent(ThesisResourceTest.java:272)
+
+shouldSubmitThesisWithTeacher  Time elapsed: 1.055 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacher(ThesisResourceTest.java:363)
+
+shouldDeleteThesis  Time elapsed: 1.061 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldDeleteThesis(ThesisResourceTest.java:238)
+
+shouldCallFindThesesWithWrongCriteria  Time elapsed: 1.04 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldCallFindThesesWithWrongCriteria(ThesisResourceTest.java:619)
+
+shouldSubmitThesisWithTeacherAndWithWrongStudent  Time elapsed: 1.042 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldSubmitThesisWithTeacherAndWithWrongStudent(ThesisResourceTest.java:455)
+
+shouldGetAllTheses  Time elapsed: 1.047 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.createThesis(ThesisResourceTest.java:642)
+	at sk.stuba.fei.uim.vsa.pr2.ThesisResourceTest.shouldGetAllTheses(ThesisResourceTest.java:140)
+
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.SanityCheckTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.295 s - in sk.stuba.fei.uim.vsa.pr2.SanityCheckTest
+---------------------------------------------------------------------
+ 
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 12.127 s <<< FAILURE! - in sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest
+shouldCreateTeacherWithOnlyRequiredProperties  Time elapsed: 0.611 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <201> but was: <500>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldCreateTeacherWithOnlyRequiredProperties(TeacherResourceTest.java:63)
+
+shouldGetTeacher  Time elapsed: 1.068 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldGetTeacher(TeacherResourceTest.java:146)
+
+deleteTeacher  Time elapsed: 1.037 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.deleteTeacher(TeacherResourceTest.java:183)
+
+shouldGetNotFoundForNonExistingTeacher  Time elapsed: 1.037 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldGetNotFoundForNonExistingTeacher(TeacherResourceTest.java:168)
+
+shouldReturnUnauthorized  Time elapsed: 0.067 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnUnauthorized(TeacherResourceTest.java:114)
+
+shouldReturnForbiddenToDeleteTeacherWithStudent  Time elapsed: 2.04 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnForbiddenToDeleteTeacherWithStudent(TeacherResourceTest.java:229)
+
+shouldReturnForbiddenToDeleteWithWrongTeacher  Time elapsed: 2.03 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldReturnForbiddenToDeleteWithWrongTeacher(TeacherResourceTest.java:215)
+
+shouldGetEmptyList  Time elapsed: 1.027 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldGetEmptyList(TeacherResourceTest.java:127)
+
+shouldGetAllTeachers  Time elapsed: 2.015 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <200> but was: <401>
+	at sk.stuba.fei.uim.vsa.pr2.TeacherResourceTest.shouldGetAllTeachers(TeacherResourceTest.java:95)
+
+---------------------------------------------------------------------
+ 

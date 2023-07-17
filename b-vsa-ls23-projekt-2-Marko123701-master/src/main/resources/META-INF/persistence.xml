@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="vsa-project-2" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>sk.stuba.fei.uim.vsa.pr2.domain.Student</class>
+    <class>sk.stuba.fei.uim.vsa.pr2.domain.Educator</class>
+    <class>sk.stuba.fei.uim.vsa.pr2.domain.FinalThesis</class>
+    <class>sk.stuba.fei.uim.vsa.pr2.User.User</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/vsa_pr2_marko123701"/>
+      <property name="javax.persistence.jdbc.user" value="vsa"/>
+      <property name="javax.persistence.jdbc.password" value="vsa"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+      <property name="eclipselink.target-database" value="PostgreSQL"/>
+      <property name="eclipselink.logging.level" value="FINE"/>
+      <property name="eclipselink.logging.parameters" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>

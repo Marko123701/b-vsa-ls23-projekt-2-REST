@@ -1,0 +1,6 @@
+-------------------------------------------------------------------------------
+Test set: sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.546 s - in sk.stuba.fei.uim.vsa.pr2.bonus.BonusSearchResourceTest
+---------------------------------------------------------------------
+ 
